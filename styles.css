@@ -1,0 +1,142 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  font-family: Helvetica, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 19em;
+  z-index: 1;
+  height: 100%;
+  padding-top: 2em;
+  overflow: hidden;
+  background-color: #1D3132;
+}
+
+#navbar header {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  padding-bottom:0.4em;
+  color: #F9F9F9;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.4em 0;
+  text-decoration: none;
+  color: #F9F9F9;
+}
+
+.nav-link:hover, 
+.nav-link:active {
+  background-color: #F9F9F9;
+  color: #1D3132;
+  transition: 200ms;
+}
+
+#main-doc {
+  margin-left: 19em;
+  color: #1D3132;
+  padding:0 3em 2em 3em ;
+  background-color:#F9F9F9;
+}
+
+.main-section header {
+  font-size: 2.2em;
+  padding-top:1.3em;
+  font-weight: bold;
+}
+.main-section p, li {
+  line-height:1.8;
+}
+
+.main-section li {
+  padding-bottom: 0.8em;
+}
+
+code {
+  display:block;
+  position: relative;
+  line-height: 1.5;
+  background-color: #C6C6F5;
+  border-radius: 3px;
+  font-size: 1.2em;
+  padding: 1em;
+  margin: 1.5em 0 1.5em 1.5em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+}
+  
+.inline-code {
+  display:inline-block;
+  font-size:1.2em;
+  padding:0.1em 0.3em;
+  margin: 0;
+}
+
+img {
+  display:block;
+  width: 55%;
+  margin: 2em auto 2em auto;
+}
+
+.main-section .subheading {
+  margin-bottom:-0.7em;
+  font-weight:bold;
+}
+
+.list-info {
+  margin-left:1.5em;
+}
+
+@media only screen and (max-width:992px) {
+  
+  #navbar {
+    background-color:black;
+  }
+  
+  #main-doc {
+    padding: 0.5em;
+  } 
+  
+  code {
+    margin: 1.5em;
+  }
+  
+  img {
+    width:80%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  
+  #navbar {
+    width:100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    padding-top: 1em;
+    overflow: hidden;
+    background-color: #1D3132;
+  }
+  
+  #main-doc {
+    margin-left: 0;
+  }
+  
+  code {
+    padding: 0.5em;
+    margin: 0.5em 0 0.5em 0.5em;
+  }
+  
+}
